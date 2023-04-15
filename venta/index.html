@@ -139,6 +139,21 @@
         </div>
       </article>
 
+<<<<<<< HEAD
+
+
+      <article class="module module-third module-kiwi">
+        <div class="module-content slideshow-container">
+          <img src="images/vasos_durax.jpeg">
+          <div class="space">
+            <h2>PRUEBA</h2>
+            <p>Precio: <b>$ 10.000.000</b><br>
+            Entrega: Inmediata</p>
+          </div>
+	</div>
+      </article>
+
+=======
       <article class="module module-third module-kiwi">
         <img src="images/vasos_durax.jpeg">
 	<img src="images/vajilla_china.jpeg">
@@ -149,6 +164,7 @@
           Entrega: Inmediata</p>
         </div>
       </article>
+>>>>>>> 5bb840dab5277eb33b7fb9d583711eec9a149da8
 
     </section>
 
@@ -161,6 +177,30 @@
   </footer>
 
   <script src="js/global-ck.js"></script>
+
+  <script>
+    const images = [
+      'images/bici_grande_1.jpeg',
+      'images/bici_grande_2.jpeg'
+    ];
+
+    let currentIndex = 0;
+
+    const slideshowImg = document.querySelector('.slideshow-img');
+    const prevArrow = document.querySelector('.slideshow-arrow-prev');
+    const nextArrow = document.querySelector('.slideshow-arrow-next');
+
+    prevArrow.addEventListener('click', () => {
+      currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
+      slideshowImg.src = images[currentIndex];
+    });
+
+    nextArrow.addEventListener('click', () => {
+      currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
+      slideshowImg.src = images[currentIndex];
+    });
+  </script>
+
 
 </body>
 
