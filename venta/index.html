@@ -13,6 +13,14 @@
 
   <link rel="stylesheet" href="css/global.css">
 
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
 </head>
 
 <body>
@@ -139,41 +147,134 @@
         </div>
       </article>
 
+      <article class="module module-third module-kiwi">
+        <div class="image-slider">
+          <img src="images/bici_grande_1.jpeg">
+          <img src="images/bici_grande_2.jpeg">
+        </div>
+        <div class="space">
+          <h2>Bicicleta Rodado 24 - Negra y Verde - Olmo Mint</h2>
+          <p>Precio: <b>$ 50.000</b><br>
+          Entrega: Inmediata</p>
+        </div>
+      </article>
+
+      <article class="module module-third module-kiwi">
+        <div class="image-slider">
+          <img src="images/bici_chica_1.jpeg">
+          <img src="images/bici_chica_2.jpeg">
+        </div>
+        <div class="space">
+          <h2>Bicicleta Rodado 16 - Azul - Reynolds - Triban</h2>
+          <p>Precio: <b>$ 13.000</b><br>
+          Entrega: Inmediata</p>
+        </div>
+      </article>
+
+      <article class="module module-third module-kiwi">
+        <div class="image-slider">
+          <img src="images/balanza_1.jpeg">
+          <img src="images/balanza_2.jpeg">
+          <img src="images/balanza_3.jpeg">
+        </div>
+        <div class="space">
+          <h2>Balanza Personal - NICTOM - Conexion a Smartphone</h2>
+          <p>Precio: <b>$ 2.500</b><br>
+          Entrega: Inmediata</p>
+        </div>
+      </article>
+
+      <article class="module module-third module-kiwi">
+        <div class="image-slider">
+          <img src="images/monopatin_1.jpeg">
+          <img src="images/monopatin_2.jpeg">
+          <img src="images/monopatin_3.jpeg">
+        </div>
+        <div class="space">
+          <h2>Monopatin Sieteveinte Glow - Metalico</h2>
+          <p>Precio: <b>$ 9.000</b><br>
+          Entrega: Inmediata</p>
+        </div>
+      </article>
+
+      <article class="module module-third module-kiwi">
+        <div class="image-slider">
+          <img src="images/pastalinda_1.jpeg">
+          <img src="images/pastalinda_2.jpeg">
+        </div>
+        <div class="space">
+          <h2>Pastalinda - Fabrica de Pasta - Morris - MO-013</h2>
+          <p>Precio: <b>$ 5.000</b><br>
+          Entrega: Inmediata</p>
+        </div>
+      </article>
+
+      <article class="module module-third module-kiwi">
+        <img src="images/ps5.jpeg">
+        <div class="space">
+          <h2>Sony PS5 Standard (CFI-1115A) + Joystick inalámbrico Sony PlayStation DualSense Original Galactic Purple (CFI-ZCT1)</h2>
+          <p>NOTA: Son 2 controles, el original mas uno extra Galactic Purple<br>
+          <p>Precio: <b>$ 280.000</b><br>
+          <p>Menos de 1 anio desde la compra<br>
+          Entrega: Inmediata</p>
+        </div>
+      </article>
+
+      <article class="module module-third module-kiwi">
+        <div class="image-slider">
+          <img src="images/skate_1.jpeg">
+          <img src="images/skate_2.jpeg">
+          <img src="images/skate_3.jpeg">
+        </div>
+        <div class="space">
+          <h2>Skate - 59cm x 15cm - Sin Lija - Hasta 45kg</h2>
+          <p>Precio: <b>$ 1.500</b><br>
+          Entrega: Inmediata</p>
+        </div>
+      </article>
+
+      <article class="module module-third module-kiwi">
+        <div class="image-slider">
+          <img src="images/tv24_1.jpeg">
+          <img src="images/tv24_2.jpeg">
+          <img src="images/tv24_3.jpeg">
+        </div>
+        <div class="space">
+          <h2>TV Sanyo LCD 24" - LCD-24XH7</h2>
+          <p>Precio: <b>$ </b><br>
+          Entrega: Inmediata</p>
+        </div>
+      </article>
+
+      <article class="module module-third module-kiwi">
+        <div class="image-slider">
+          <img src="images/tv42_1.jpeg">
+          <img src="images/tv42_2.jpeg">
+          <img src="images/tv42_3.jpeg">
+        </div>
+        <div class="space">
+          <h2>TV Philips 42" LCD - 42PFL3403/77</h2>
+          <p>Precio: <b>$ </b><br>
+          Entrega: Inmediata</p>
+        </div>
+      </article>
+
     </section>
 
   </div>
 
-  <footer class="site-footer">
-    <div class="page-wrap">
-
-    </div>
-  </footer>
-
-  <script src="js/global-ck.js"></script>
-
-  <script>
-    const images = [
-      'images/bici_grande_1.jpeg',
-      'images/bici_grande_2.jpeg'
-    ];
-
-    let currentIndex = 0;
-
-    const slideshowImg = document.querySelector('.slideshow-img');
-    const prevArrow = document.querySelector('.slideshow-arrow-prev');
-    const nextArrow = document.querySelector('.slideshow-arrow-next');
-
-    prevArrow.addEventListener('click', () => {
-      currentIndex = (currentIndex === 0) ? images.length - 1 : currentIndex - 1;
-      slideshowImg.src = images[currentIndex];
-    });
-
-    nextArrow.addEventListener('click', () => {
-      currentIndex = (currentIndex === images.length - 1) ? 0 : currentIndex + 1;
-      slideshowImg.src = images[currentIndex];
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.image-slider').slick({
+        dots: false,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>'
+      });
     });
   </script>
-
 
 </body>
 
