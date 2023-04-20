@@ -225,23 +225,6 @@ body {
 	max-height: 400px
 }
 
-.module-kiwi:hover {
-	overflow: visible;
-	z-index: 1
-}
-
-.module-kiwi:hover img {
-	-webkit-filter: grayscale(0%);
-	-moz-filter: grayscale(0%);
-	filter: grayscale(0%)
-}
-
-.module-kiwi img {
-	-webkit-filter: grayscale(0%);
-	-moz-filter: grayscale(0%);
-	filter: grayscale(0%)
-}
-
 @media (max-width: 600px) {
 	.module-kiwi:hover {
 		padding-bottom: 200px
