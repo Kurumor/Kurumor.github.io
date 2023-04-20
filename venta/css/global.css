@@ -221,7 +221,8 @@ body {
 }
 
 .module-kiwi img {
-	width: 100%
+	width: 100%;
+	max-height: 400px
 }
 
 .module-kiwi:hover {
@@ -242,10 +243,6 @@ body {
 }
 
 @media (max-width: 600px) {
-	.module-kiwi {
-		height: 150px
-	}
-
 	.module-kiwi:hover {
 		padding-bottom: 200px
 	}
