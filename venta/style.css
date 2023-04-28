@@ -112,10 +112,10 @@ h1 {
     touch-action: none;
   }
 
-  /* ocultar las secciones */
+  /* ocultar las secciones
   .section {
     display: none;
-  }
+  }*/
 
   /* mostrar la barra de menú */
   .menu {
