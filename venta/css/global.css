@@ -404,3 +404,30 @@ img {
   max-width: 20%;
   height: auto;
 }
+
+
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #333;
+  color: #fff;
+}

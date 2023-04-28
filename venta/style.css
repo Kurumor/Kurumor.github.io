@@ -55,12 +55,21 @@ img {
 }
 
 
-h1{
-
-text-align: center;
-
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Luminari', sans-serif;
+  text-align: center;
+  color: green;
+  text-shadow: 2px 2px #eee;
+  margin-top: 50px;
 }
 
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 36px;
+  }
+}
 
 
 
