@@ -72,7 +72,7 @@ h1 {
     opacity: 1 !important;
     top: auto !important;
     transform: translateY(0) !important;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    text-shadow: 1px 1px 1px rgba(245, 39, 39, 0.95);
   }
   .tiles .tile .details span, .tiles .tile .details span * {
     touch-action: none;
