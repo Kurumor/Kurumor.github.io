@@ -23,6 +23,42 @@ img {
 
 
 
+
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #ffd700;
+}
+
+
+
+
+
+
+
+/*
 .menu {
   list-style: none;
   display: flex;
@@ -47,7 +83,7 @@ img {
   background-color: #333;
   color: #fff;
 }
-
+*/
 
 
 .site-header {
@@ -65,12 +101,30 @@ h1 {
   margin-top: 50px;
 }
 
-@media screen and (max-width: 600px) {
+
+@media (max-width: 767px) {
   h1 {
     font-size: 36px;
   }
-}
+  .tiles .tile .details span {
+    opacity: 1 !important;
+    top: auto !important;
+    transform: translateY(0) !important;
+  }
+  .tiles .tile .details span, .tiles .tile .details span * {
+    touch-action: none;
+  }
 
+  /* ocultar las secciones */
+  .section {
+    display: none;
+  }
+
+  /* mostrar la barra de menú */
+  .menu {
+    display: block;
+  }
+}
 
 
 .tiles {
@@ -150,10 +204,10 @@ h1 {
 }
 .tiles .tile:focus .title,
 .tiles .tile:hover .title {
-          transition-delay: 0.15s;
+  transition-delay: 0.15s;
 }
 .tiles .tile:focus .info,
 .tiles .tile:hover .info {
-          transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
 

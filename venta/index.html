@@ -11,6 +11,21 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
 
+
+  <script>
+    document.querySelectorAll('ul.menu a').forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        
+        const sectionId = link.getAttribute('href');
+        
+        document.querySelector(sectionId).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
 </head>
 
 <body>
@@ -36,7 +51,7 @@
 
       <div class="tiles">
 	<a class="tile" href="#">
-          <img src="images/ps5.jpeg" alt="">
+          <img src="images/ps5_sold.jpeg" alt="">
           <div class="details">
 	    <span class="title">Sony PS5 Standard (CFI-1115A) + Joystick inalámbrico Sony PlayStation DualSense Original Galactic Purple (CFI-ZCT1)</span>
 	    <span class="info">Son 2 controles, el original mas uno extra Galactic Purple<br>
@@ -60,7 +75,7 @@
 
       <div class="tiles">
 	<a class="tile" href="#">
-          <img src="images/tv42_1.jpeg" alt="">
+          <img src="images/tv42_1_sold.jpeg" alt="">
           <div class="details">
             <span class="title">TV Philips 42" LCD HD - 42PFL3403/77</span>
             <span class="info">Precio: <b><s>$ 35.000</s> VENDIDA</b><br>
@@ -115,7 +130,7 @@
 
       <div class="tiles">
 	<a class="tile" href="#">
-          <img src="images/mesa_plegable.jpg" alt="">
+          <img src="images/mesa_plegable.jpeg" alt="">
           <div class="details">
             <span class="title">Mesa Plegable Porta Laptop - Desayuno</span>
             <span class="info">Precio: <b>$ 5.000</b><br>
@@ -158,10 +173,10 @@
 
       <div class="tiles">
 	<a class="tile" href="#">
-          <img src="images/sandwichera.jpeg" alt="">
+          <img src="images/sandwichera_sold.jpeg" alt="">
           <div class="details">
             <span class="title">Sandwichera Phillips - Con superficie antiadherente - 700w</span>
-            <span class="info">Precio: <b>$ 4.000</b><br>
+            <span class="info">Precio: <b><s>$ 4.000</s> VENDIDA</b><br>
             Disponible: Inmediato</span>
           </div>
         </a>
@@ -191,7 +206,7 @@
 
       <div class="tiles">
 	<a class="tile" href="#">
-          <img src="images/pastalinda_1.jpeg" alt="">
+          <img src="images/pastalinda_1_sold.jpeg" alt="">
           <div class="details">
             <span class="title">Pastalinda - Fabrica de Pasta - Morris - MO-013</span>
             <span class="info">Precio: <b><s>$ 5.000</s> VENDIDA</b><br>
@@ -257,10 +272,10 @@
 
       <div class="tiles">
 	<a class="tile" href="#">
-          <img src="images/fuentes_vidrio.jpeg" alt="">
+          <img src="images/fuentes_vidrio_sold.jpeg" alt="">
           <div class="details">
             <span class="title">Fuentes de Vidrio Acanaladas Marinex x 4 unidades - Apto Freezer, Horno y Microondas - 26cm x 6cm</span>
-            <span class="info">Precio: <b>$ 5.200</b><br>
+            <span class="info">Precio: <b><s>$ 6.000</s> VENDIDAS</b><br>
             Disponible: Inmediato</span>
           </div>
         </a>
@@ -268,10 +283,10 @@
 
       <div class="tiles">
 	<a class="tile" href="#">
-          <img src="images/tuppers.jpeg" alt="">
+          <img src="images/tuppers_sold.jpeg" alt="">
           <div class="details">
             <span class="title">Tuppers de Vidrio con Tapa Plástica x 6 unidades - Apto Freezer, Horno y Microondas</span>
-            <span class="info">Precio: <b>$ 7.000</b><br>
+            <span class="info">Precio: <b><s>$ 7.000</s> VENDIDOS</b><br>
             Disponible: Inmediato</span>
           </div>
         </a>
@@ -290,10 +305,10 @@
 
       <div class="tiles">
 	<a class="tile" href="#">
-          <img src="images/jarra_vidrio.jpeg" alt="">
+          <img src="images/jarra_vidrio_sold.jpeg" alt="">
           <div class="details">
             <span class="title">Jarra de vidrio 1L</span>
-            <span class="info">Precio: <b>$ 1.000</b><br>
+            <span class="info">Precio: <b><s>$ 1.000</s> VENDIDA</b><br>
             Disponible: Inmediato</span>
           </div>
         </a>
@@ -324,9 +339,6 @@
 
 
     </div>
-
-
-
 
 
 
@@ -479,12 +491,17 @@
         </a>
       </div>
 
-
     </div>
 
-
-
   </div>
+
+
+<ul class="menu">
+  <li><a href="#technology">Tecnología y muebles</a></li>
+  <li><a href="#kitchen">Cocina</a></li>
+  <li><a href="#toys">Juguetes y Rodados</a></li>
+</ul>
+
 
 </body>
 
