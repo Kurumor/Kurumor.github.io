@@ -21,7 +21,6 @@ img {
   transition: opacity 0.2s ease-in-out;
 }
 
-
 .menu {
   display: flex;
   justify-content: space-around;
@@ -49,40 +48,6 @@ img {
   color: #ffd700;
 }
 
-
-
-
-
-
-
-/*
-.menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  margin: 0 10px;
-}
-
-.menu a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-.menu a:hover {
-  background-color: #333;
-  color: #fff;
-}
-*/
-
-
 .site-header {
 	position: relative
 }
@@ -107,6 +72,7 @@ h1 {
     opacity: 1 !important;
     top: auto !important;
     transform: translateY(0) !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
   }
   .tiles .tile .details span, .tiles .tile .details span * {
     touch-action: none;
