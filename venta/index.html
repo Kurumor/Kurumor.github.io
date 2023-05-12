@@ -1,14 +1,616 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="refresh" content="0; url=https://vieytux.mitiendanube.com/">
-        <script type="text/javascript">
-            window.location.href = "https://vieytux.mitiendanube.com/"
-        </script>
-        <title>Vendemos todo por mudanza</title>
-    </head>
-    <body>
-        If you are not redirected automatically, follow this <a href='https://vieytux.mitiendanube.com/'>link</a>.
-    </body>
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Vendemos todo por mudanza</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/luminari" rel="stylesheet">
+
+
+  <script>
+    document.querySelectorAll('ul.menu a').forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        
+        const sectionId = link.getAttribute('href');
+        
+        document.querySelector(sectionId).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <style>
+    body {
+      background-color: rgb(242, 241, 240);
+    }
+  </style>
+
+  <header class="site-header">
+    <h1>¡¡¡ Nos mudamos y vendemos TODO !!!</h1>
+    <h3><i>Contacto: beranor@gmail.com</i></h3>
+  </header>
+
+  <ul class="menu">
+    <li><a href="#kitchen">Cocina</a></li>
+    <li><a href="#toys">Juegos</a></li>
+    <li><a href="#muebles">Muebles</a></li>
+    <li><a href="#rodados">Rodados</a></li>
+    <li><a href="#technology">Tecnología</a></li>
+  </ul>
+
+
+  <div class="mosaic">
+
+    <!--=========-->
+    <!-- KITCHEN -->
+    <!--=========-->
+    <div id="kitchen" class="section">
+
+      <h2 style="color: blue">Cocina</h2>
+      <hr class="solid">
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/colador.jpeg" alt="">
+          <div class="details">
+            <span class="title">Colador metálico - 26cm diametro superior y 12cm de alto</span>
+            <span class="info">Precio: <b>$ 2.500</b><br>
+            Disponible: Junio</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/olla_chica_2.jpeg" alt="">
+          <div class="details">
+            <span class="title">Olla / cacerola con tapa negra - diametro 26cm y alto 11cm</span>
+            <span class="info">Precio: <b>$ 5.000</b><br>
+            Disponible: Junio</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/olla_grande_2.jpeg" alt="">
+          <div class="details">
+            <span class="title">Olla / cacerola con tapa negra - diametro 26cm y alto 16cm</span>
+            <span class="info">Precio: <b>$ 6.000</b><br>
+            Disponible: Junio</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/pizzeras_enlozada.jpeg" alt="">
+          <div class="details">
+            <span class="title">Pizzeras enlozadas 34cm - 2 unidades</span>
+            <span class="info">Precio: <b>$ 2.500</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/wok.jpeg" alt="">
+          <div class="details">
+            <span class="title">Wok Teflon Antiadherente - 28cm x 10cm</span>
+            <span class="info">Precio: <b>$ 5.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/dips.jpeg" alt="">
+          <div class="details">
+            <span class="title">Set de Dips - Copetineros</span>
+            <span class="info">Precio: <b>$ 2.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/casuelas_snacks.jpeg" alt="">
+          <div class="details">
+            <span class="title">Casuelas para Picada Snacks</span>
+            <span class="info">Precio: <b>$ 5.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/ensaladera_vidrio.jpeg" alt="">
+          <div class="details">
+            <span class="title">Ensaladera de Vidrio</span>
+            <span class="info">Precio: <b>$ 1.400</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+
+
+    <!--======-->
+    <!-- TOYS -->
+    <!--======-->
+    <div id="toys" class="section">
+
+      <h2 style="color: blue">Juegos</h2>
+      <hr class="solid">
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/lego_city.jpeg" alt="">
+          <div class="details">
+            <span class="title">LEGO CITY - Police - 80 piezas - Starter Set 60136 Building Kit</span>
+            <span class="info">Precio: <b>$ 8.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/stunt_flyer.jpeg" alt="">
+          <div class="details">
+            <span class="title">Stunt Flyer Avion Lanzador</span>
+            <span class="info">Precio: <b>$ 7.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/te_conozco.jpeg" alt="">
+          <div class="details">
+            <span class="title">Te Conozco? - ¿cuales son tus verdaderos colores? - SELLADO - SIN USO</span>
+            <span class="info">Precio: <b>$ 2.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/tutti_frutti.jpeg" alt="">
+          <div class="details">
+            <span class="title">Tutti Frutti: Un mundo de palabras - Ruibal - SELLADO - SIN USO</span>
+            <span class="info">Precio: <b>$ 5.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/misterio.jpeg" alt="">
+          <div class="details">
+            <span class="title">Misterio: Un juego de pistas y temibles sospechas - Ruibal - SELLADO - SIN USO</span>
+            <span class="info">Precio: <b>$ 5.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/que_artista.jpg" alt="">
+          <div class="details">
+            <span class="title">Que Artista</span>
+            <span class="info">Precio: <b>$ 3.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/caja_registradora.jpg" alt="">
+          <div class="details">
+            <span class="title">Caja Registradora- Learning Fun</span>
+            <span class="info">Precio: <b>$ 8.000</b><br>
+            Calculadora real con pantalla display y sonido<br>
+            Lector de barras con luz y sonido<br>
+            Ranura para tarjeta y gaveta para dinero con botón de apertura.<br>
+            Canasto de compras con vegetales, carnes, lácteos, billetes, monedas y tarjetas de crédito.<br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/petite_gourmet.jpeg" alt="">
+          <div class="details">
+            <span class="title">Cocina con Horno y Accesorios - Petite Gourmet</span>
+            <span class="info">Precio: <b>$ 2.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/letras_y_numeros.jpg" alt="">
+          <div class="details">
+            <span class="title">Letras y Números: 72 letras, números y signos.</span>
+            <span class="info">Precio: <b>$ 2.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/blocky_piratas.jpeg" alt="">
+          <div class="details">
+            <span class="title">Blocky Piratas - 100 Pcs (01-0637)</span>
+            <span class="info">Precio: <b>$ 1.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/9_pistas.jpeg" alt="">
+          <div class="details">
+            <span class="title">9 pistas - Piensa rapido y descubre el misterio</span>
+            <span class="info">Precio: <b>$ 1.700</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/arma_mec.jpeg" alt="">
+          <div class="details">
+            <span class="title">Armamec concept 8 - 230 piezas</span>
+            <span class="info">Precio: <b>$ 5.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/sliding_mouse.jpeg" alt="">
+          <div class="details">
+            <span class="title">Sliding Mouse</span>
+            <span class="info">Precio: <b>$ 3.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/chanchitos.jpeg" alt="">
+          <div class="details">
+            <span class="title">Los Chanchitos Constructores</span>
+            <span class="info">Precio: <b>$ 2.500</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+
+    <!--============-->
+    <!-- MUEBLES -->
+    <!--============-->
+    <div id="muebles" class="section">
+
+      <h2 style="color: blue">Muebles</h2>
+      <hr class="solid">
+
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/mesa_y_sillas.png" alt="">
+          <div class="details">
+            <span class="title">Juego de comedor: Mesa extensible a 1.80 mts Negra con 6 Sillas</span>
+            <span class="info">Precio: <b>$ 40.000</b><br>
+            NOTA: Falta uno de los vidrios y a dos sillas les falta una varilla de refuerzo<br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/comoda.jpg" alt="">
+          <div class="details">
+            <span class="title">Comoda 125cm x 86cm x 48cm Negra</span>
+            <span class="info">Precio: <b>$ 30.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/placard.jpg" alt="">
+          <div class="details">
+            <span class="title">Placard 58cm ancho x 184cm alto x 47cm profundidad - 2 puertas - Melamina Blanco</span>
+            <span class="info">Precio: <b>$ 12.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/cama_casa.jpeg" alt="">
+          <div class="details">
+            <span class="title">Cama Casita Montesori 150cm x 90cm x 160cm de alto + Colchón 140cm x 80cm + sábanas</span>
+            <span class="info">Precio: <b>$ 15.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/estanteria_cars.jpeg" alt="">
+          <div class="details">
+            <span class="title">Biblioteca - Estantería con cajonera - Cars</span>
+            <span class="info">Precio: <b>$ 6.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/mesa_plegable.jpeg" alt="">
+          <div class="details">
+            <span class="title">Mesa Plegable Porta Laptop / Desayuno</span>
+            <span class="info">Precio: <b>$ 5.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/cama_marinera.jpeg" alt="">
+          <div class="details">
+            <span class="title">Cama marinera de 1 plaza con encastre, separable en 2 camas individuales.</span>
+            <span class="info">Precio: <b>$ 85.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/silla_infantil.jpeg" alt="">
+          <div class="details">
+            <span class="title">Silla de bebe para comer blanca - Bandera rebatible</span>
+            <span class="info">Precio: <b>$ 3.000</b><br>
+            Con detalles como se ve en la foto<br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/cuna_colecho_4.jpeg" alt="">
+          <div class="details">
+            <span class="title">Cuna colecho laqueada blanca. 2 alturas regulables. Se incluye el colchón.</span>
+            <span class="info">Precio: <b>$ 25.000</b><br>
+            Las 4 ruedas están dañadas, el resto en buen estado.<br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+
+
+
+    <!--=========-->
+    <!-- RODADOS -->
+    <!--=========-->
+    <div id="rodados" class="section">
+
+      <h2 style="color: blue">Rodados</h2>
+      <hr class="solid">
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/monopatin_1.jpeg" alt="">
+          <div class="details">
+            <span class="title">Monopatin Sieteveinte Glow - Metalico</span>
+            <span class="info">Precio: <b>$ 9.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/protectores.jpg" alt="">
+          <div class="details">
+            <span class="title">Set Protecciones Tuxs Profesional Kit Rodillera Codera Skate</span>
+            <span class="info">Precio: <b>$ 9.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/camicleta.jpeg" alt="">
+          <div class="details">
+            <span class="title">Camicleta de madera tipo Chivita Color Roja - Rodado 12</span>
+            <span class="info">Precio: <b>$ 9.000</b><br>
+            Rodado 12 - Con asiento ajustable<br>
+            Largo 80 cm - Ancho 40 cm - Alto 57 cm<br>
+            Ruedas de goma maciza - Peso Soportado: 25 kg<br>
+            Modelo: CHI-210<br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/rollers_2.jpeg" alt="">
+          <div class="details">
+            <span class="title">Rollers ajustables entre talle 31 a talle 34</span>
+            <span class="info">Precio: <b>$ 15.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/moto_3.jpeg" alt="">
+          <div class="details">
+            <span class="title">Moto a bateria Sprint Azul 6v Biemme</span>
+            <span class="info">Precio: <b>$ 40.000</b><br>
+            Voltaje de la batería: 6V<br>
+            Velocidad máxima: 8 km/h<br>
+            Modelo: 1145<br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/carting_1.jpg" alt="">
+          <div class="details">
+            <span class="title">Karting metálico azul a pedal, con freno de mano</span>
+            <span class="info">Precio: <b>$ 35.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/bici_facu_1.jpg" alt="">
+          <div class="details">
+            <span class="title">Bicicleta Rodado 12 con rueditas - metálica - azul - Excelente estado</span>
+            <span class="info">Precio: <b>$ 25.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/triciclo_1.jpg" alt="">
+          <div class="details">
+            <span class="title">Triciclo Rodaly de metal - como nuevo</span>
+            <span class="info">Precio: <b>$ 7.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+
+
+    <!--============-->
+    <!-- TECHNOLOGY -->
+    <!--============-->
+    <div id="technology" class="section">
+
+      <h2 style="color: blue">Tecnología</h2>
+      <hr class="solid">
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/lg_oled_55.jpg" alt="">
+          <div class="details">
+            <span class="title">TV LG OLED AI ThinQ 4k 55" Smart (OLED55BXPSA)</span>
+            <span class="info">Precio: <b>$ 390.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/cafetera.jpeg" alt="">
+          <div class="details">
+            <span class="title">Cafetera Nespresso Lattissima Touch Black (F521-AR-BK-NE) - 1 año de uso</span>
+            <span class="info">Precio: <b>$ 100.000</b><br>
+            Disponible: Agosto</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/gear_vr.jpeg" alt="">
+          <div class="details">
+            <span class="title">Samsung Oculus Gear VR - Compatible: S7, S7 edge, Note5, S6 edge+, S6, S6 edge (SM-R323)</span>
+            <span class="info">Precio: <b>$ 6.500</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/headset.jpeg" alt="">
+          <div class="details">
+            <span class="title">Headset Gamer SteelSeries Siberia V1 - Funcionan perfectos - Funda de la cinta desgastada</span>
+            <span class="info">Precio: <b>$ 10.000</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="tiles">
+        <a class="tile">
+          <img src="images/dvd_player.jpeg" alt="">
+          <div class="details">
+            <span class="title">Reproductor DVD JVC (XV-N322S)</span>
+            <span class="info">Precio: <b>$ 1.500</b><br>
+            Disponible: Inmediato</span>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
 </html>
