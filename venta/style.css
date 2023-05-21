@@ -149,7 +149,7 @@ h1 {
 .tiles .tile .details .info {
   line-height: 1.2;
   margin-top: 5px;
-  font-size: 18px;
+  font-size: 15px;
 }
 .tiles .tile:focus:before,
 .tiles .tile:focus span,
