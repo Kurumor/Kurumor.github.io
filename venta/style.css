@@ -1,26 +1,108 @@
-.mosaic {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
+/* ======================================
+Responsive Image gallery Style rules
+======================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-img {
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  padding: 40px 5%;
+}
+
+.heading-text {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.heading-text span {
+  font-weight: 100;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Responsive image gallery rules begin*/
+
+.image-gallery {
+  text-align: center;
+}
+
+.image-gallery > li {
+  /* fallback */
+  display: inline-block;
+  width: 350px;
+  margin: 0 5px 10px 5px;
+  /* end fallback */
+  position: relative;
+  cursor: pointer;
+}
+
+@supports (display: flex) {
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .image-gallery > li {
+    flex-basis: 350px; /*width: 350px;*/
+    margin: 0;
+  }
+
+  .image-gallery::after {
+    content: "";
+    flex-basis: 350px;
+  }
+}
+
+.image-gallery li img {
+  object-fit: cover;
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
+  border-radius: 5px;
 }
 
-.text {
+.overlay {
   position: absolute;
-  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(57, 57, 57, 0.502);
+  top: 0;
   left: 0;
-  right: 0;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
   color: #fff;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  border-radius: 5px;
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* hover */
+.image-gallery li:hover .overlay {
+  transform: scale(1);
+}
+
+
+
+
+
+
+
+
+/* AGREGAOD */
 .menu {
   display: flex;
   justify-content: space-around;
@@ -48,11 +130,6 @@ img {
   color: #ffd700;
 }
 
-.site-header {
-	position: relative
-}
-
-
 h1 {
   font-size: 48px;
   font-weight: bold;
@@ -63,114 +140,13 @@ h1 {
   margin-top: 50px;
 }
 
-
 @media (max-width: 767px) {
   h1 {
     font-size: 36px;
   }
-  .tiles .tile .details span {
-    opacity: 1 !important;
-    top: auto !important;
-    transform: translateY(0) !important;
-    text-shadow: 1px 1px 1px rgba(245, 39, 39, 0.95);
-  }
-  .tiles .tile .details span, .tiles .tile .details span * {
-    touch-action: none;
-  }
-
-  /* ocultar las secciones
-  .section {
-    display: none;
-  }*/
-
-  /* mostrar la barra de menú */
   .menu {
     display: block;
   }
 }
 
-
-.tiles {
-  font-size: 0;
-  text-align: center;
-  position: relative;
-}
-.tiles .tile {
-  display: inline-block;
-  margin: 10px;
-  text-align: left;
-  opacity: .99;
-  overflow: hidden;
-  position: relative;
-  border-radius: 3px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
-}
-.tiles .tile:before {
-  content: '';
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
-  width: 100%;
-  height: 50%;
-  opacity: 0;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 2;
-  transition-property: top, opacity;
-  transition-duration: 0.3s;
-}
-.tiles .tile img {
-  display: block;
-  max-width: 100%;
-  backface-visibility: hidden;
-}
-.tiles .tile .details {
-  font-size: 16px;
-  padding: 20px;
-  color: #fff;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 3;
-}
-.tiles .tile .details span {
-  display: block;
-  opacity: 0;
-  position: relative;
-  top: 100px;
-  transition-property: top, opacity;
-  transition-duration: 0.3s;
-  transition-delay: 0s;
-}
-.tiles .tile .details .title {
-  line-height: 1;
-  font-weight: 600;
-  font-size: 22px;
-}
-.tiles .tile .details .info {
-  line-height: 1.2;
-  margin-top: 5px;
-  font-size: 15px;
-}
-.tiles .tile:focus:before,
-.tiles .tile:focus span,
-.tiles .tile:hover:before,
-.tiles .tile:hover span {
-  opacity: 1;
-}
-.tiles .tile:focus:before,
-.tiles .tile:hover:before {
-  top: 50%;
-}
-.tiles .tile:focus span,
-.tiles .tile:hover span {
-  top: 0;
-}
-.tiles .tile:focus .title,
-.tiles .tile:hover .title {
-  transition-delay: 0.15s;
-}
-.tiles .tile:focus .info,
-.tiles .tile:hover .info {
-  transition-delay: 0.25s;
-}
 
