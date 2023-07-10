@@ -26,10 +26,10 @@ def print_header():
     
         <ul class="menu">
           <li><a href="#airelibre">Aire Libre</a></li>
-          <li><a href="#calzado">Calzado</a></li>
           <li><a href="#cocina">Cocina</a></li>
           <li><a href="#hogar">Hogar</a></li>
           <li><a href="#juegos">Juegos</a></li>
+          <li><a href="#peluches">Peluches</a></li>
           <li><a href="#libros">Libros</a></li>
           <li><a href="#muebles">Muebles</a></li>
           <li><a href="#rodados">Rodados</a></li>
@@ -75,8 +75,7 @@ def print_item(img, desc, price):
           <img src="{img}" alt="">
           <div class="overlay">
             <span>{desc}<br>
-            Precio: <b>$ {price}</b><br>
-            Disponible: Inmediato</span>
+            Precio: <b>$ {price}</b></span>
           </div>
         </li>""")
 
@@ -90,7 +89,7 @@ def print_footer():
 
 # BEGIN
 
-sections = [ "airelibre", "calzado", "cocina", "hogar", "juegos", "libros", "muebles", "rodados", "tecnologia" ]
+sections = [ "airelibre", "cocina", "hogar", "juegos", "peluches", "libros", "muebles", "rodados", "tecnologia" ]
 
 
 print_header()
