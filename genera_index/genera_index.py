@@ -25,15 +25,14 @@ def print_header():
         </header>
     
         <ul class="menu">
-          <li><a href="#airelibre">Aire Libre</a></li>
-          <li><a href="#cocina">Cocina</a></li>
-          <li><a href="#hogar">Hogar</a></li>
-          <li><a href="#juegos">Juegos</a></li>
-          <li><a href="#peluches">Peluches</a></li>
-          <li><a href="#libros">Libros</a></li>
           <li><a href="#muebles">Muebles</a></li>
           <li><a href="#rodados">Rodados</a></li>
           <li><a href="#tecnologia">Tecnología</a></li>
+          <li><a href="#peluches">Peluches 3x2</a></li>
+          <li><a href="#libros">Libros 3x2</a></li>
+          <li><a href="#juegos">Juegos</a></li>
+          <li><a href="#hogar">Hogar</a></li>
+          <li><a href="#airelibre">Aire Libre</a></li>
         </ul>""")
 
 
@@ -42,15 +41,20 @@ def print_section(sect):
     csvfile = f"csv/{sect}.csv"
     if sect == 'airelibre':
         title = 'Aire Libre'
-    elif sect == 'peluches':
-        title = 'Peluches - Promoción 3x2 (el de menor valor es gratis)'
     else:
         title = sect.capitalize()
 
-    print(f"""
-    <div class="container">
-      <h2 id="{sect}" class="heading-text">{title}</h2>
-      <ul class="image-gallery">""")
+    if sect == 'libros' or sect == 'peluches':
+        print(f"""
+        <div class="container">
+	      <h2 id="{sect}" class="heading-text"> <span style='color:blue;font-weight:bold;'>{title}</span> - <span style='color:red;font-style:italic'>Promoción 3x2 (el de menor valor es gratis)</span></h2>
+          <ul class="image-gallery">""")
+    else:
+        print(f"""
+        <div class="container">
+          <h2 id="{sect}" class="heading-text"><span style='color:blue;font-weight:bold;'>{title}</h2>
+          <ul class="image-gallery">""")
+
 
     with open(csvfile, 'r') as read_obj:
         csv_reader = reader(read_obj)
@@ -77,7 +81,7 @@ def print_item(img, desc, price):
           <img src="{img}" alt="">
           <div class="overlay">
             <span>{desc}<br>
-            Precio: <b>$ {price}</b></span>
+            Precio: <b>{price}</b></span>
           </div>
         </li>""")
 
@@ -91,8 +95,7 @@ def print_footer():
 
 # BEGIN
 
-sections = [ "airelibre", "cocina", "hogar", "juegos", "peluches", "libros", "muebles", "rodados", "tecnologia" ]
-
+sections = [ "muebles", "rodados", "tecnologia", "peluches", "libros", "juegos", "hogar", "airelibre" ]
 
 print_header()
 
