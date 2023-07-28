@@ -42,6 +42,8 @@ def print_section(sect):
     csvfile = f"csv/{sect}.csv"
     if sect == 'airelibre':
         title = 'Aire Libre'
+    elif sect == 'peluches':
+        title = 'Peluches - Promoción 3x2 (el de menor valor es gratis)'
     else:
         title = sect.capitalize()
 
